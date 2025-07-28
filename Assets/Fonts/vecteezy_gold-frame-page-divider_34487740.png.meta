@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 72664e1282a0aa24a994dbddc0c51fcd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -304128900085451553
+    second: vecteezy_gold-frame-page-divider_34487740_0
+  - first:
+      213: -101700933319456555
+    second: vecteezy_gold-frame-page-divider_34487740_1
+  - first:
+      213: 4250611168097371918
+    second: vecteezy_gold-frame-page-divider_34487740_2
+  - first:
+      213: 451434073222518959
+    second: vecteezy_gold-frame-page-divider_34487740_3
+  - first:
+      213: -3279798255033410881
+    second: vecteezy_gold-frame-page-divider_34487740_4
+  - first:
+      213: 3940024623450068975
+    second: vecteezy_gold-frame-page-divider_34487740_5
+  - first:
+      213: -8500087694062829617
+    second: vecteezy_gold-frame-page-divider_34487740_6
+  - first:
+      213: 1244055068022046522
+    second: vecteezy_gold-frame-page-divider_34487740_7
+  - first:
+      213: 3792036029525072750
+    second: vecteezy_gold-frame-page-divider_34487740_8
+  - first:
+      213: 6670520763459038478
+    second: vecteezy_gold-frame-page-divider_34487740_9
+  - first:
+      213: -7841108399248440142
+    second: vecteezy_gold-frame-page-divider_34487740_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_0
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 729
+        width: 521
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4f970706487cbf0800000000000000
+      internalID: -304128900085451553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_1
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 761
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d80b2c3a8fa69ef0800000000000000
+      internalID: -101700933319456555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_2
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 775
+        width: 554
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0780c036543dfa30800000000000000
+      internalID: 4250611168097371918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_3
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 761
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa89fe5d5e0d34600800000000000000
+      internalID: 451434073222518959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_4
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 482
+        width: 900
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba99c93dd0db72d0800000000000000
+      internalID: -3279798255033410881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_5
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 739
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe798071587cda630800000000000000
+      internalID: 3940024623450068975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_6
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 482
+        width: 900
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf37b3174f990a80800000000000000
+      internalID: -8500087694062829617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_7
+      rect:
+        serializedVersion: 2
+        x: 3333
+        y: 761
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f7a7a3e75c34110800000000000000
+      internalID: 1244055068022046522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_8
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 775
+        width: 553
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b13538da400a430800000000000000
+      internalID: 3792036029525072750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_9
+      rect:
+        serializedVersion: 2
+        x: 3992
+        y: 761
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0de7dcda43729c50800000000000000
+      internalID: 6670520763459038478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecteezy_gold-frame-page-divider_34487740_10
+      rect:
+        serializedVersion: 2
+        x: 4055
+        y: 729
+        width: 520
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b407717479ce2390800000000000000
+      internalID: -7841108399248440142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      vecteezy_gold-frame-page-divider_34487740_0: -304128900085451553
+      vecteezy_gold-frame-page-divider_34487740_1: -101700933319456555
+      vecteezy_gold-frame-page-divider_34487740_10: -7841108399248440142
+      vecteezy_gold-frame-page-divider_34487740_2: 4250611168097371918
+      vecteezy_gold-frame-page-divider_34487740_3: 451434073222518959
+      vecteezy_gold-frame-page-divider_34487740_4: -3279798255033410881
+      vecteezy_gold-frame-page-divider_34487740_5: 3940024623450068975
+      vecteezy_gold-frame-page-divider_34487740_6: -8500087694062829617
+      vecteezy_gold-frame-page-divider_34487740_7: 1244055068022046522
+      vecteezy_gold-frame-page-divider_34487740_8: 3792036029525072750
+      vecteezy_gold-frame-page-divider_34487740_9: 6670520763459038478
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
