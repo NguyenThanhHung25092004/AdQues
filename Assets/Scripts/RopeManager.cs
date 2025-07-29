@@ -14,7 +14,7 @@ public class RopeManager : MonoBehaviour
     public float defaultDistance = 6.5f;
 
     public string verticalKeys = "Vertical";
-    public KeyCode pullKey = KeyCode.DownArrow;
+    public KeyCode pullKey = KeyCode.Return;
     
     private bool isPulling = false;
 

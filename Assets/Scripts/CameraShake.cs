@@ -11,7 +11,7 @@ public class CameraShake : MonoBehaviour
     {
         instance = this;
     }
-    // Update is called once per frame
+
     public void cameraShake(CinemachineImpulseSource source)
     {
         source.GenerateImpulseWithForce(shakeForce);

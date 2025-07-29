@@ -25474,7 +25474,7 @@ MonoBehaviour:
   minDistance: 0.5
   defaultDistance: 6.7
   verticalKeys: Vertical
-  pullKey: 274
+  pullKey: 13
 --- !u!114 &1490445746 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3576345510544440237, guid: fa33046aad5a61f429971fd8318e7b73, type: 3}
@@ -26939,7 +26939,7 @@ MonoBehaviour:
   minDistance: 2
   defaultDistance: 7
   verticalKeys: Vertical2
-  pullKey: 115
+  pullKey: 32
 --- !u!114 &2138109843 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6966175113605626337, guid: 2d5aa4905e25afd44bac9b45ac920a3a, type: 3}

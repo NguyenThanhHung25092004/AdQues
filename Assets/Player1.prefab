@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 5294773318109880354}
   - component: {fileID: 924026660779896380}
   - component: {fileID: 3576345510544440237}
+  - component: {fileID: 3960003356982822281}
+  - component: {fileID: 5702498496536932948}
   m_Layer: 3
   m_Name: Player1
   m_TagString: Player1
@@ -232,11 +234,76 @@ MonoBehaviour:
   jumpKey: 273
   fallMultiplier: 7
   jumpMultiplier: 4
-  interactKey: 13
   interactRadius: 0.5
   groundRadius: 0.18
   playerPosition: {fileID: 2006837999982179650}
   groundPosition: {fileID: 6246219172638153957}
+  jump: 0
+--- !u!114 &3960003356982822281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132311293610195774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e0b8976ba627d458450cd5bd386db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5702498496536932948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132311293610195774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 1, y: 0, z: 0}
 --- !u!1 &4373798054120006860
 GameObject:
   m_ObjectHideFlags: 0

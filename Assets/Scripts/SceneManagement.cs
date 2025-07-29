@@ -59,7 +59,6 @@ public class SceneManagement : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log($"Red at door: {redAtDoor}, Blue at door: {blueAtDoor}");
         if (redAtDoor && blueAtDoor)
         {
             loadNextLevel();

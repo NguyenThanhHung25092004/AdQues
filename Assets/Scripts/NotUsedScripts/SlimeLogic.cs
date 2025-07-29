@@ -8,13 +8,11 @@ public class SlimeLogic : MonoBehaviour
     {
         impulseSource = GetComponent<CinemachineImpulseSource>();   
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player1") || collision.gameObject.CompareTag("Player2"))
+        if (collision.gameObject.CompareTag("Player1") || collision.gameObject.CompareTag("Player2"))
         {
             CameraShake.instance.cameraShake(impulseSource);
-            Destroy(collision.gameObject);
-            SceneManagement.instance.reloadScene();
         }
     }
 

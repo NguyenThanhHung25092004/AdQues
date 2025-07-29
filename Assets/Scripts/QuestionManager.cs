@@ -23,7 +23,7 @@ public class QuestionManager : MonoBehaviour
     [SerializeField] private CinemachineImpulseSource impulseSource;
     [SerializeField] private Text scoreText;
     private int currentScore = 0;
-    private const int maxScore = 17;
+    private const int maxScore = 15;
     private void Awake()
     {
 #if UNITY_EDITOR

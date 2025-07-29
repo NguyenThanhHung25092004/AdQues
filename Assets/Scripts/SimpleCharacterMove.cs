@@ -11,7 +11,6 @@ public class SimpleCharacterMove : MonoBehaviour
     [SerializeField] private KeyCode jumpKey = KeyCode.UpArrow;
     [SerializeField] private float fallMultiplier = 4f;
     [SerializeField] private float jumpMultiplier = 4f;
-    [SerializeField] private KeyCode interactKey = KeyCode.Return;
     [SerializeField] private float interactRadius = 0.5f;
     [SerializeField] private float groundRadius = 0.01f;
     [SerializeField] private Transform playerPosition;
@@ -45,8 +44,6 @@ public class SimpleCharacterMove : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(interactKey))
-        {
             Collider2D[] hits = Physics2D.OverlapCircleAll(playerPosition.position, interactRadius);
             foreach (var hit in hits)
             {
@@ -57,7 +54,6 @@ public class SimpleCharacterMove : MonoBehaviour
                     break;
                 }
             }
-        }
     }
 
     private void FixedUpdate()
