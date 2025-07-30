@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: QuestionSet2
   m_EditorClassIdentifier: 
   questions:
-  - {fileID: 11400000, guid: ab55f36b5c28c0a41bfb9e798ddcb029, type: 2}
-  - {fileID: 11400000, guid: db4ef33fdd02a124a84eb388995c46db, type: 2}
-  - {fileID: 11400000, guid: 2f58ce3a8cf57e045a110b074886f10a, type: 2}
-  - {fileID: 11400000, guid: 7717080f2d1d0a841830b500a2c9eb70, type: 2}
-  - {fileID: 11400000, guid: 276adf6e880b2334fb86a4d024f4b202, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

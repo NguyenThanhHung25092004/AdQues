@@ -9,6 +9,8 @@ TagManager:
   - Player2
   - Monster
   - FallLimit
+  - MCQ
+  - TypeQuestion
   layers:
   - Default
   - TransparentFX

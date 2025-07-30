@@ -63,3 +63,15 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: TitleTheme
+    clip: {fileID: 8300000, guid: ec08c8a9e61d0b543b95b805a869bc2a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Jump
+    clip: {fileID: 8300000, guid: e9a6ba4cd459e4f428f4977e4317804e, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0

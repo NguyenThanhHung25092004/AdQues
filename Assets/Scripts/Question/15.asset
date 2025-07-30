@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44ddbf53bbba784c99fa37c5b88f18c, type: 3}
+  m_Name: 15
+  m_EditorClassIdentifier: 
+  questionText: "15. Ph\xF2ng/ban n\xE0o c\xF3 s\u1ED1 l\u01B0\u1EE3ng th\xE0nh vi\xEAn
+    \u0111\xF4ng nh\u1EA5t t\u1EA1i c\xF4ng ty?"
+  choices:
+  - A. Marketing PixOn
+  - B. Business Development AdTrue
+  - C. Product PixOn
+  - D. Tech - Content AdTrue
+  correctAnswer: C. Product PixOn

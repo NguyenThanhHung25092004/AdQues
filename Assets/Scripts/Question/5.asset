@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44ddbf53bbba784c99fa37c5b88f18c, type: 3}
+  m_Name: 5
+  m_EditorClassIdentifier: 
+  questionText: "5. AdTrue t\u1EEBng \u0111\u01B0\u1EE3c Gi\u1EA5y khen g\xEC t\u1EEB
+    UBND Qu\u1EADn C\u1EA7u Gi\u1EA5y?"
+  choices:
+  - "A. Khen th\u01B0\u1EDFng DN th\u1EF1c hi\u1EC7n t\u1ED1t ch\xEDnh s\xE1ch ph\xE1p
+    lu\u1EADt thu\u1EBF Nh\xE0 n\u01B0\u1EDBc (2019)"
+  - "B. Khen th\u01B0\u1EDFng DN c\xF3 \u0111\xF3ng g\xF3p xu\u1EA5t s\u1EAFc trong
+    ph\xE1t tri\u1EC3n kinh t\u1EBF - x\xE3 h\u1ED9i"
+  - "C. B\u1EB1ng khen DN c\xF3 nhi\u1EC1u \u0111\xF3ng g\xF3p trong c\xF4ng t\xE1c
+    ph\xF2ng, ch\u1ED1ng d\u1ECBch Covid - 19"
+  - "D. Khen th\u01B0\u1EDFng DN th\u1EF1c hi\u1EC7n t\u1ED1t ch\xEDnh s\xE1ch ph\xE1p
+    lu\u1EADt thu\u1EBF Nh\xE0 n\u01B0\u1EDBc (2020)"
+  correctAnswer: "A. Khen th\u01B0\u1EDFng DN th\u1EF1c hi\u1EC7n t\u1ED1t ch\xEDnh
+    s\xE1ch ph\xE1p lu\u1EADt thu\u1EBF Nh\xE0 n\u01B0\u1EDBc (2019)"

@@ -4,27 +4,27 @@ using UnityEngine.EventSystems;
 
 public class FontSizeChange : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private TMP_Text text;
-    private float normalFontSize = 64f;
-    public float hoverFontSize = 75f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private RectTransform imageRect;
+    private float normalScale = 1f;
+    [SerializeField] private float hoverScale = 1.08f;
+
+    void Awake()
     {
-        if(text == null)
+
+        if(imageRect == null)
         {
-            text = GetComponentInChildren<TMP_Text>();
+            imageRect = GetComponent<RectTransform>();
         }
-        text.fontSize = normalFontSize;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        text.fontSize = hoverFontSize;
+        imageRect.localScale = Vector3.one * hoverScale;
         SoundLibrary.instance.PlaySound("Hover");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        text.fontSize = normalFontSize;
+        imageRect.localScale = Vector3.one * normalScale;
     }
 }

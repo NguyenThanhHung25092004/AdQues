@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class QuestionBlock : MonoBehaviour
 {
-    public QuestionData question;
+    public QuestionDataBase question;
     public GameObject hiddenArea;
     public bool hasBeenAnswered = false;
 
@@ -11,6 +11,7 @@ public class QuestionBlock : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("BlockTriggered");
         if (collision.gameObject.CompareTag("Player1") || collision.gameObject.CompareTag("Player2"))
         {
             playerInTrigger = true;

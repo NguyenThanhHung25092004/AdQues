@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44ddbf53bbba784c99fa37c5b88f18c, type: 3}
+  m_Name: 9
+  m_EditorClassIdentifier: 
+  questionText: "9. Trang th\xF4ng tin n\u1ED9i b\u1ED9 c\u1EE7a AdTrue - PixOn Games
+    c\xF3 t\xEAn l\xE0 g\xEC?"
+  choices:
+  - A. WeAdTrue.io
+  - B. WeTrue.io
+  - C. Chungta.AdTrue
+  - D. WePixOn.io
+  correctAnswer: B. WeTrue.io

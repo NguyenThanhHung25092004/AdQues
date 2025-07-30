@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Xml.Serialization;
+using TMPro;
 using Unity.Cinemachine;
 using Unity.Hierarchy;
 using UnityEngine;
@@ -14,8 +15,11 @@ public class QuestionManager : MonoBehaviour
     public GameObject questionPanel;
     public Text questionText;
     public List<Button> choiceButtons = new List<Button>();
+    public TMP_InputField answerInput;
+    public GameObject answerField;
+    public GameObject buttons;
 
-    private QuestionData currentQuestion;
+    private QuestionDataBase currentQuestion;
     private QuestionBlock block;
     private const string SCORE = "AdQuesScore";
     private const string LevelScore = "AdQuesLevelScore";
@@ -24,6 +28,14 @@ public class QuestionManager : MonoBehaviour
     [SerializeField] private Text scoreText;
     private int currentScore = 0;
     private const int maxScore = 15;
+
+    private void resetScore()
+    {
+        currentScore = 0;
+        PlayerPrefs.SetInt(SCORE, 0);
+        PlayerPrefs.Save();
+        scoreText.text = $"{currentScore}/{maxScore}";
+    }
     private void Awake()
     {
 #if UNITY_EDITOR
@@ -48,7 +60,7 @@ public class QuestionManager : MonoBehaviour
         scoreText.text = $"{currentScore}/{maxScore}";
     }
 
-    public void showQuestion(QuestionData question, QuestionBlock senderBlock)
+    public void showQuestion(QuestionDataBase question, QuestionBlock senderBlock)
     {
         if (senderBlock.hasBeenAnswered)
             return;
@@ -57,21 +69,12 @@ public class QuestionManager : MonoBehaviour
         block = senderBlock;
         questionPanel.SetActive(true);
         questionText.text = question.questionText;
-        
-        for(int i = 0; i < choiceButtons.Count; i++)
-        {
-            choiceButtons[i].gameObject.SetActive(true);
-            string selectedAnswer = question.choices[i];
-            choiceButtons[i].GetComponentInChildren<Text>().text = selectedAnswer;
 
-            choiceButtons[i].onClick.RemoveAllListeners();
-            choiceButtons[i].onClick.AddListener(() => { submitAnswer(selectedAnswer);
-                buttonClickSound();
-            });
-        }
+        question.setUpUI(this);
+        
     }
 
-    private void buttonClickSound()
+    public void buttonClickSound()
     {
         SoundLibrary.instance.PlaySound("AnswerButton");
     }
@@ -79,7 +82,7 @@ public class QuestionManager : MonoBehaviour
     public void submitAnswer(string answer)
     {
         block.hasBeenAnswered = true;
-        if(answer.Equals(currentQuestion.correctAnswer, System.StringComparison.OrdinalIgnoreCase))
+        if(currentQuestion.isCorrect(answer))
         {
             updateScore();
         } else
@@ -90,14 +93,10 @@ public class QuestionManager : MonoBehaviour
         questionPanel.SetActive(false);
     }
 
-    private void resetScore()
+    public void processTypeQuestion()
     {
-        currentScore = 0;
-        PlayerPrefs.SetInt(SCORE, 0);
-        PlayerPrefs.Save();
-        scoreText.text = $"{currentScore}/{maxScore}";
+        string answer = answerInput.text;
+        submitAnswer(answer);
     }
-
-  
 
 }

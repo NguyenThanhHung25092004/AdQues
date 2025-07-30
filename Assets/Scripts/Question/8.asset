@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44ddbf53bbba784c99fa37c5b88f18c, type: 3}
+  m_Name: 8
+  m_EditorClassIdentifier: 
+  questionText: "T\u1EEB 2024, PixOn Games chuy\u1EC3n sang t\u1EADp trung ph\xE1t
+    tri\u1EC3n d\xF2ng game n\xE0o?"
+  choices:
+  - A. Puzzle, hybrid, hypercasual
+  - B. Hypercasual, puzzle, casual
+  - C. Hybrid, casual, hypercasual
+  - D. Casual, puzzle, hybrid
+  correctAnswer: D. Casual, puzzle, hybrid

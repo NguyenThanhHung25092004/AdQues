@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44ddbf53bbba784c99fa37c5b88f18c, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  questionText: "3. Hi\u1EC7n t\u1EA1i, c\xE1c l\u0129nh v\u1EF1c ho\u1EA1t \u0111\u1ED9ng
+    ch\xEDnh c\u1EE7a AdTrue bao g\u1ED3m nh\u1EEFng m\u1EA3ng n\xE0o?"
+  choices:
+  - "A. Qu\u1EA3ng c\xE1o t\u1EF1 \u0111\u1ED9ng & Ph\xE1t h\xE0nh tr\xF2 ch\u01A1i
+    tr\xEAn di \u0111\u1ED9ng "
+  - "B. Qu\u1EA3ng c\xE1o online & Ph\xE1t h\xE0nh tr\xF2 ch\u01A1i tr\xEAn di \u0111\u1ED9ng"
+  - "C. Qu\u1EA3ng c\xE1o t\u1EF1 \u0111\u1ED9ng & Ph\xE1t h\xE0nh tr\xF2 ch\u01A1i
+    tr\xEAn m\xE1y t\xEDnh"
+  - "D. Qu\u1EA3ng c\xE1o online & Ph\xE1t h\xE0nh tr\xF2 ch\u01A1i"
+  correctAnswer: "A. Qu\u1EA3ng c\xE1o t\u1EF1 \u0111\u1ED9ng & Ph\xE1t h\xE0nh tr\xF2
+    ch\u01A1i tr\xEAn di \u0111\u1ED9ng "

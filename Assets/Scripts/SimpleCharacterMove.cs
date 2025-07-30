@@ -72,6 +72,7 @@ public class SimpleCharacterMove : MonoBehaviour
 
         if(jump)
         {
+            SoundLibrary.instance.PlaySound("Jump");
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jump = false;
         }

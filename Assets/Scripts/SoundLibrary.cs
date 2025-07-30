@@ -26,6 +26,7 @@ public class SoundLibrary : MonoBehaviour
                 s.source.pitch = s.pitch;
                 s.source.loop = s.loop;
             }
+        PlaySound("TitleTheme");
     }
 
     public void PlaySound(string name)
@@ -37,5 +38,16 @@ public class SoundLibrary : MonoBehaviour
             return;
         }
         s.source.Play();
+    }
+
+    public void StopSound(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Stop();
     }
 }
