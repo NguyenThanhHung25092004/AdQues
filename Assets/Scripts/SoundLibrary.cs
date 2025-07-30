@@ -50,4 +50,16 @@ public class SoundLibrary : MonoBehaviour
         }
         s.source.Stop();
     }
+
+
+    public static void playMusic()
+    {
+        if (instance != null)
+            instance.PlaySound("TitleTheme");
+    }
+    public static void stopMusic()
+    {
+        if (instance != null)
+            instance.StopSound("TitleTheme");
+    }
 }

@@ -5,15 +5,16 @@ public class PlayerInfoManager : MonoBehaviour
     public static PlayerInfoManager instance;
 
     [System.Serializable]
-    public class PlayerData
+    public class InfoTeam
     {
-        public string name;
-        public string email;
+        public InfoUser player1;
+        public InfoUser player2;
         public int score;
+        public string timeEnd;
+        public float timeCount;
     }
 
-    public PlayerData player1 = new PlayerData();
-    public PlayerData player2 = new PlayerData();
+    public InfoTeam team = new InfoTeam();
 
     private void Awake()
     {
@@ -29,7 +30,7 @@ public class PlayerInfoManager : MonoBehaviour
 
     public void resetAll()
     {
-        player1 = new PlayerData();
-        player2 = new PlayerData();
+        team = new InfoTeam();
     }
+
 }

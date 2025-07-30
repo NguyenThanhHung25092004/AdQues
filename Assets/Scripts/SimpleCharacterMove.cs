@@ -90,6 +90,11 @@ public class SimpleCharacterMove : MonoBehaviour
     public void setMovementEnabled(bool value)
     {
         canMove = value;
+        if (!value)
+        {
+            horizontalMove = 0f;
+            rb.linearVelocity = Vector3.zero; 
+        }
     }
 
     public bool isGrounded()

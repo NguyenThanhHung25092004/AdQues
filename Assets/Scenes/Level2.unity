@@ -742,6 +742,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1741765388}
     - target: {fileID: 2908748888112755870, guid: d5298ee97d1acb94a81eb8268e0bc19a, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 1617055477}
+    - target: {fileID: 2908748888112755870, guid: d5298ee97d1acb94a81eb8268e0bc19a, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 1724129546}
+    - target: {fileID: 2908748888112755870, guid: d5298ee97d1acb94a81eb8268e0bc19a, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1098313554}
@@ -1642,6 +1650,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4710533305878667956, guid: fa33046aad5a61f429971fd8318e7b73, type: 3}
   m_PrefabInstance: {fileID: 1617055475}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1617055477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3576345510544440237, guid: fa33046aad5a61f429971fd8318e7b73, type: 3}
+  m_PrefabInstance: {fileID: 1617055475}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751973a49c4f8dc41b1f08a8dc65f541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1623677078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1823,6 +1842,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d5aa4905e25afd44bac9b45ac920a3a, type: 3}
+--- !u!114 &1724129546 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6966175113605626337, guid: 2d5aa4905e25afd44bac9b45ac920a3a, type: 3}
+  m_PrefabInstance: {fileID: 1724129545}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751973a49c4f8dc41b1f08a8dc65f541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1741765387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1831,6 +1861,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1385562907419473334, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1503481496838802632, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
       propertyPath: m_Name
       value: Canvas

@@ -10,9 +10,9 @@ public class InfoSceneManager : MonoBehaviour
 
     public void confirmInfo()
     {
-        PlayerInfoManager.instance.player1.name = player1Name.text;
-        PlayerInfoManager.instance.player1.email = player1Email.text;
-        PlayerInfoManager.instance.player2.name = player2Name.text;
-        PlayerInfoManager.instance.player2.email = player2Email.text;
+        PlayerInfoManager.instance.team.player1.name = player1Email.text;
+        PlayerInfoManager.instance.team.player1.email = player1Email.text;
+        PlayerInfoManager.instance.team.player2.name = player2Name.text;
+        PlayerInfoManager.instance.team.player2.email = player2Email.text;
     }
 }

@@ -33,12 +33,6 @@ public class SceneManagement : MonoBehaviour
     public void loadNextLevel()
     {
         int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-        if(nextScene >= SceneManager.sceneCountInBuildSettings) {
-            finishScreen.SetActive(true);
-            PlayerInfoManager.instance.player1.score = PlayerPrefs.GetInt("AdQuesScore", 0);
-            PlayerInfoManager.instance.player2.score = PlayerPrefs.GetInt("AdQuesScore", 0);
-            exportInfo.exportFinalResults();
-        }
         SceneManager.LoadScene(nextScene);
     }
 
@@ -61,7 +55,12 @@ public class SceneManagement : MonoBehaviour
     {
         if (redAtDoor && blueAtDoor)
         {
-            loadNextLevel();
+            TimerManager.instance.StopTimer();
+            finishScreen.SetActive(true);
+            PlayerInfoManager.instance.team.score = PlayerPrefs.GetInt("AdQuesScore", 0);
+            PlayerInfoManager.instance.team.timeCount = TimerManager.instance.GetPlayTime();
+            PlayerInfoManager.instance.team.timeEnd = TimerManager.instance.getTimeNow();
+            exportInfo.exportFinalResults();
             redAtDoor = false;
             blueAtDoor = false;
         }

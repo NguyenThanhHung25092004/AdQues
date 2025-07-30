@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ddbf53bbba784c99fa37c5b88f18c, type: 3}
   m_Name: 9
   m_EditorClassIdentifier: 
-  questionText: "9. Trang th\xF4ng tin n\u1ED9i b\u1ED9 c\u1EE7a AdTrue - PixOn Games
-    c\xF3 t\xEAn l\xE0 g\xEC?"
+  questionText: "9. D\u1EF1 \xE1n \u0111\u1EA1t gi\u1EA3i th\u01B0\u1EDFng D\u1EF1
+    \xE1n c\u1EE7a n\u0103m 2024 l\xE0:"
   choices:
-  - A. WeAdTrue.io
-  - B. WeTrue.io
-  - C. Chungta.AdTrue
-  - D. WePixOn.io
-  correctAnswer: B. WeTrue.io
+  - 'A. Nuts And Bolts - Screw Puzzle '
+  - B. Screw Pin - Jam Puzzle
+  - C. Screw Pin Out!
+  - D. Tidy Master - Satisfeel ASMR
+  correctAnswer: B. Screw Pin - Jam Puzzle

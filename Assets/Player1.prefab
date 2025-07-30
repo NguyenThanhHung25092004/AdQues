@@ -235,7 +235,7 @@ MonoBehaviour:
   fallMultiplier: 7
   jumpMultiplier: 4
   interactRadius: 0.5
-  groundRadius: 0.18
+  groundRadius: 0.31
   playerPosition: {fileID: 2006837999982179650}
   groundPosition: {fileID: 6246219172638153957}
   jump: 0

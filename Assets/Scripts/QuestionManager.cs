@@ -26,6 +26,8 @@ public class QuestionManager : MonoBehaviour
 
     [SerializeField] private CinemachineImpulseSource impulseSource;
     [SerializeField] private Text scoreText;
+    [SerializeField] private SimpleCharacterMove player1;
+    [SerializeField] private SimpleCharacterMove player2;
     private int currentScore = 0;
     private const int maxScore = 15;
 
@@ -64,12 +66,12 @@ public class QuestionManager : MonoBehaviour
     {
         if (senderBlock.hasBeenAnswered)
             return;
-
+        player1.setMovementEnabled(false);
+        player2.setMovementEnabled(false);
         currentQuestion = question;
         block = senderBlock;
         questionPanel.SetActive(true);
         questionText.text = question.questionText;
-
         question.setUpUI(this);
         
     }
@@ -81,14 +83,16 @@ public class QuestionManager : MonoBehaviour
 
     public void submitAnswer(string answer)
     {
-        block.hasBeenAnswered = true;
-        if(currentQuestion.isCorrect(answer))
+        block.hasBeenAnswered = true;       
+        if (currentQuestion.isCorrect(answer))
         {
             updateScore();
         } else
         {
             CameraShake.instance.cameraShake(impulseSource);
         }
+        player1.setMovementEnabled(true);
+        player2.setMovementEnabled(true);
         block.showArea();
         questionPanel.SetActive(false);
     }

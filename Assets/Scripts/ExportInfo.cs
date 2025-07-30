@@ -12,22 +12,24 @@ public class ExportInfo : MonoBehaviour
         {
             using (System.IO.StreamWriter writer = new System.IO.StreamWriter(filePath, true))
             {
-                writer.WriteLine("Name, Email, Score");
+                writer.WriteLine("Name, Email, Score, Time");
             }
         }
     }
     public void exportFinalResults()
     {
-        var p1 = PlayerInfoManager.instance.player1;
-        var p2 = PlayerInfoManager.instance.player2;
+        var p1 = PlayerInfoManager.instance.team.player1;
+        var p2 = PlayerInfoManager.instance.team.player2;
+        int score = PlayerInfoManager.instance.team.score;
 
-        string line1 = $"{p1.name},{p1.email},{p1.score}";
-        string line2 = $"{p2.name},{p2.email},{p2.score}";
+        string line1 = $"{p1.name},{p1.email},{score}, {TimerManager.instance.GetPlayTime()}";
+        string line2 = $"{p2.name},{p2.email},{score}, {TimerManager.instance.GetPlayTime()}";
 
         saveLine(line1);
         saveLine(line2);
 
         PlayerInfoManager.instance.resetAll();
+        TimerManager.instance.ResetTimer();
     }
 
     private void saveLine(string line)
