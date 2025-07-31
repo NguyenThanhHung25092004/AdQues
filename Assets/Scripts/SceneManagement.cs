@@ -5,7 +5,6 @@ public class SceneManagement : MonoBehaviour
 {
     public static SceneManagement instance;
     public GameObject finishScreen;
-    [SerializeField] private ExportInfo exportInfo;
 
     private bool redAtDoor = false;
     private bool blueAtDoor = false;
@@ -16,7 +15,6 @@ public class SceneManagement : MonoBehaviour
         {
             instance = this;
         }
-        exportInfo = FindFirstObjectByType<ExportInfo>();
     }
 
     public void setPlayerAtDoor(string playerColor, bool atDoor)
@@ -48,6 +46,7 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene("Menu");
         PlayerPrefs.SetInt("AdQuesScore", 0);
         PlayerPrefs.SetInt("AdQuesLevelScore", 0);
+        TimerManager.instance.ResetTimer();
         PlayerPrefs.Save();
     }
 
@@ -60,7 +59,6 @@ public class SceneManagement : MonoBehaviour
             PlayerInfoManager.instance.team.score = PlayerPrefs.GetInt("AdQuesScore", 0);
             PlayerInfoManager.instance.team.timeCount = TimerManager.instance.GetPlayTime();
             PlayerInfoManager.instance.team.timeEnd = TimerManager.instance.getTimeNow();
-            exportInfo.exportFinalResults();
             redAtDoor = false;
             blueAtDoor = false;
         }

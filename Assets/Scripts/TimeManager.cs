@@ -30,11 +30,13 @@ public class TimerManager : MonoBehaviour
 
     public void StartTimer()
     {
+        Debug.Log("TimerStarted");
         isRunning = true;
     }
 
     public void StopTimer()
     {
+        Debug.Log("TimeStopped");
         isRunning = false;
     }
 
@@ -52,4 +54,5 @@ public class TimerManager : MonoBehaviour
     {
         return System.DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
     }
+
 }
