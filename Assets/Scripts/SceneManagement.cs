@@ -5,6 +5,7 @@ public class SceneManagement : MonoBehaviour
 {
     public static SceneManagement instance;
     public GameObject finishScreen;
+    public ScoreUploader uploader;
 
     private bool redAtDoor = false;
     private bool blueAtDoor = false;
@@ -58,9 +59,9 @@ public class SceneManagement : MonoBehaviour
             finishScreen.SetActive(true);
             PlayerInfoManager.instance.team.score = PlayerPrefs.GetInt("AdQuesScore", 0);
             PlayerInfoManager.instance.team.timeCount = TimerManager.instance.GetPlayTime();
-            PlayerInfoManager.instance.team.timeEnd = TimerManager.instance.getTimeNow();
             redAtDoor = false;
             blueAtDoor = false;
+            uploader.UploadScore(PlayerInfoManager.instance.team.player1.name, PlayerInfoManager.instance.team.player1.email, PlayerInfoManager.instance.team.player2.name, PlayerInfoManager.instance.team.player2.email, PlayerInfoManager.instance.team.score, PlayerInfoManager.instance.team.timeCount);
         }
     }
 }

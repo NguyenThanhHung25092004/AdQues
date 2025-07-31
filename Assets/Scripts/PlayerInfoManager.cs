@@ -10,7 +10,6 @@ public class PlayerInfoManager : MonoBehaviour
         public InfoUser player1;
         public InfoUser player2;
         public int score;
-        public string timeEnd;
         public float timeCount;
     }
 

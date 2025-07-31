@@ -23984,6 +23984,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2716986411018873537, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 880.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716986411018873537, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 472
+      objectReference: {fileID: 0}
     - target: {fileID: 2924795648397869641, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -24071,6 +24079,14 @@ PrefabInstance:
     - target: {fileID: 8143214541103746711, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969520116249372011, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 880.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969520116249372011, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 472
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
