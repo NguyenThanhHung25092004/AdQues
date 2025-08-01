@@ -388,6 +388,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: buttonClickSound
       objectReference: {fileID: 0}
+    - target: {fileID: 6619870736262442533, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1837371481}
+    - target: {fileID: 6619870736262442533, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WinGame
+      objectReference: {fileID: 0}
     - target: {fileID: 8143214541103746711, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -15901,8 +15909,12 @@ PrefabInstance:
       value: FallLimit
       objectReference: {fileID: 0}
     - target: {fileID: 4797040988235681070, guid: e6c3e52d87882c24da743e11f0673e25, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4797040988235681070, guid: e6c3e52d87882c24da743e11f0673e25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.858669
+      value: 91.23
       objectReference: {fileID: 0}
     - target: {fileID: 4797040988235681070, guid: e6c3e52d87882c24da743e11f0673e25, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17109,6 +17121,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b4e7a96982c8c4f916f35c7bff350b, type: 3}
+--- !u!114 &1837371481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8212023987875411683, guid: b6b4e7a96982c8c4f916f35c7bff350b, type: 3}
+  m_PrefabInstance: {fileID: 1837371480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189d7801faa11004bbe0e5ab48443de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1884658007
 PrefabInstance:
   m_ObjectHideFlags: 0

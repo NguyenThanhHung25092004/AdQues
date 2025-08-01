@@ -1,16 +1,37 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TimerDisplay : MonoBehaviour
 {
-    private TMP_Text timerText;
-
-    private void Awake()
+    public TMP_Text timerText;
+    bool isInit = false;
+    private void OnEnable()
     {
-        timerText = GetComponent<TMP_Text>();
+        if ( !isInit)
+        {
+            isInit = true;
+            TimerManager.OnValueChange += Tick;
+        }
     }
-    void Update()
+    private void OnDisable()
+    {
+        if (isInit)
+        {
+            isInit = false;
+            TimerManager.OnValueChange -= Tick;
+        }
+    }
+    private void OnDestroy()
+    {
+        if (isInit)
+        {
+            isInit = false;
+            TimerManager.OnValueChange -= Tick;
+        }
+    }
+    void Tick()
     {
         if (TimerManager.instance != null)
         {
@@ -20,4 +41,5 @@ public class TimerDisplay : MonoBehaviour
             timerText.text = $"{minutes:D2}:{seconds:D2}";
         }
     }
+   
 }

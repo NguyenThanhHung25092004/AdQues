@@ -1132,7 +1132,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1867200270}
         m_TargetAssemblyTypeName: MenuManagement, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: PlayLevel1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1145,18 +1145,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1593207690}
         m_TargetAssemblyTypeName: InfoSceneManager, Assembly-CSharp
         m_MethodName: confirmInfo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 988878437}
-        m_TargetAssemblyTypeName: TimerManager, Assembly-CSharp
-        m_MethodName: StartTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3725,74 +3713,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &988878436
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 739.5293
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 387.1093
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368804287769175249, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7228820498574209312, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-      propertyPath: m_Name
-      value: TimeManagement
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 620d24e95822123428c03899e03ae20f, type: 3}
---- !u!114 &988878437 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6902375310533446126, guid: 620d24e95822123428c03899e03ae20f, type: 3}
-  m_PrefabInstance: {fileID: 988878436}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41c2df5982ee9dd4abdfd3ca5a7cd179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1014757242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,7 +5008,6 @@ MonoBehaviour:
       name: 
       email: 
     score: 0
-    timeEnd: 
     timeCount: 0
 --- !u!4 &1593207692
 Transform:
@@ -7789,4 +7708,3 @@ SceneRoots:
   - {fileID: 1867200271}
   - {fileID: 1593207692}
   - {fileID: 1297147194043323338}
-  - {fileID: 988878436}

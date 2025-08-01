@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1474729b674a774d94c9aeeccd40291, type: 3}
   m_Name: 14
   m_EditorClassIdentifier: 
-  questionText: "Ng\u01B0\u1EDDi \u0111\xE3 gi\xE0nh v\u1ECB tr\xED Ng\xF4i sao chuy\xEAn
-    c\u1EA7n trong 5 th\xE1ng li\xEAn ti\u1EBFp 2-3-4-5-6/2025 l\xE0 ai?"
+  questionText: "B\u1EA1n n\u1EEF \u0111\xE3 gi\xE0nh v\u1ECB tr\xED Ng\xF4i sao
+    chuy\xEAn c\u1EA7n trong 5 th\xE1ng li\xEAn ti\u1EBFp 2-3-4-5-6/2025 l\xE0 ai?"
   correctAnswers:
   - "Nguy\u1EC5n Th\u1ECB Th\xF9y Linh"

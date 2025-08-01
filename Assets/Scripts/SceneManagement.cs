@@ -1,6 +1,7 @@
 using UnityEngine;
+using System.Collections;
+using System.Text;
 using UnityEngine.SceneManagement;
-
 public class SceneManagement : MonoBehaviour
 {
     public static SceneManagement instance;
@@ -64,4 +65,19 @@ public class SceneManagement : MonoBehaviour
             uploader.UploadScore(PlayerInfoManager.instance.team.player1.name, PlayerInfoManager.instance.team.player1.email, PlayerInfoManager.instance.team.player2.name, PlayerInfoManager.instance.team.player2.email, PlayerInfoManager.instance.team.score, PlayerInfoManager.instance.team.timeCount);
         }
     }
+   
+    #region Cheat
+    public void WinGame()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            setPlayerAtDoor("Red", true);
+            setPlayerAtDoor("Blue", true);
+        }
+        else
+        {
+            SceneManager.LoadScene(5);
+        }
+    }
+    #endregion
 }

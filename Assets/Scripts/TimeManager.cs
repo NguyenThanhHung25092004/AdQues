@@ -1,12 +1,14 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimerManager : MonoBehaviour
 {
     public static TimerManager instance;
 
-    private float playTime = 0f;
+    private int playTime = 0;
     private bool isRunning = false;
-
+    public static Action OnValueChange = null;
     void Awake()
     {
         if (instance == null)
@@ -19,15 +21,24 @@ public class TimerManager : MonoBehaviour
             Destroy(gameObject); 
         }
     }
-
+    float timecount = 0;
     void Update()
     {
         if (isRunning)
         {
-            playTime += Time.deltaTime;
+            timecount += Time.deltaTime;
+            if(timecount >= 1)
+            {
+                timecount = 0;
+                Tick();
+            }
         }
     }
-
+    void Tick()
+    {
+        playTime ++;
+        OnValueChange?.Invoke();
+    }
     public void StartTimer()
     {
         Debug.Log("TimerStarted");
@@ -47,12 +58,12 @@ public class TimerManager : MonoBehaviour
 
     public void ResetTimer()
     {
-        playTime = 0f;
+        playTime = 0;
     }
 
     public string getTimeNow()
     {
         return System.DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
     }
-
+   
 }

@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd8207f5b180a447a8e187e83f64f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostAddress: http://localhost:3000/submit
+  hostAddress: https://we.adtrue.com/AdQues/adq.php
 --- !u!4 &36932702
 Transform:
   m_ObjectHideFlags: 0
@@ -650,6 +650,14 @@ PrefabInstance:
       propertyPath: m_text
       value: "(Vi\u1EBFt \u0111\u1EA7y \u0111\u1EE7 h\u1ECD v\xE0 t\xEAn Ti\u1EBFng
         Vi\u1EC7t, c\xF3 d\u1EA5u)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619870736262442533, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1837371481}
+    - target: {fileID: 6619870736262442533, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WinGame
       objectReference: {fileID: 0}
     - target: {fileID: 8143214541103746711, guid: 34d8b6a1914c7b5489cef947ed9e6afb, type: 3}
       propertyPath: m_Pivot.x

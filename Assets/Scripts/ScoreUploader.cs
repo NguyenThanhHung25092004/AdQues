@@ -5,7 +5,6 @@ using System.Text;
 
 public class ScoreUploader : MonoBehaviour
 {
-    //public string hostAddress = "http://localhost:3000/submit";
     public string hostAddress = "https://we.adtrue.com/AdQues/adq.php";
 
     public void Tester()
